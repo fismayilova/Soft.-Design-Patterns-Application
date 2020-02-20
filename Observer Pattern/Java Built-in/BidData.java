@@ -15,10 +15,8 @@ public class BidData extends Observable {
 		notifyObservers();
 	}
 
-	public void setMeasurements(String slot_author, int slot_price, String slot_name) {
-		this.slot_author = slot_author;
+	public void setMeasurements(int slot_price) {
 		this.slot_price = slot_price;
-		this.slot_name = slot_name;
 		measurementsChanged();
 	}
 
